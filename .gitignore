@@ -12,9 +12,10 @@ venv/
 # Streamlit
 .streamlit/
 
-# Model files (if large)
+# Model files (if large) - but allow our specific model
 *.pth
 *.pt
+!coral_health_resnet50.pth
 
 # IDE
 .vscode/

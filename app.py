@@ -4,8 +4,7 @@ import numpy as np
 from PIL import Image
 from torchvision import transforms
 from model import load_model
-from gradcam_utils import generate_gradcam
-from pytorch_grad_cam.utils.image import show_cam_on_image
+from gradcam_utils import generate_gradcam, show_cam_on_image
 import requests
 from io import BytesIO
 

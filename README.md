@@ -2,6 +2,12 @@
 
 A Streamlit web application that uses deep learning to classify coral reef images as **Bleached** or **Healthy (Unbleached)** with Grad-CAM visualizations to explain model predictions.
 
+## 🚀 Live Demo
+
+**Try the app now**: [https://coral-health.streamlit.app/](https://coral-health.streamlit.app/)
+
+Upload coral images or paste image URLs to get instant health assessments with AI explanations!
+
 ## Features
 
 - **Image Classification**: Upload images or paste URLs to classify coral health
@@ -11,10 +17,15 @@ A Streamlit web application that uses deep learning to classify coral reef image
 
 ## Setup
 
+### Option 1: Use the Live App (Recommended)
+Simply visit [https://coral-health.streamlit.app/](https://coral-health.streamlit.app/) - no setup required!
+
+### Option 2: Run Locally
+
 1. **Clone the repository**:
    ```bash
-   git clone <your-repo-url>
-   cd coral-health-streamlit
+   git clone https://github.com/ashutosh8021/Coral-Health.git
+   cd Coral-Health
    ```
 
 2. **Install dependencies**:
@@ -23,10 +34,18 @@ A Streamlit web application that uses deep learning to classify coral reef image
    ```
 
 3. **Ensure model file exists**:
-   - The app expects `coral_health_resnet50.pth` in the root directory
-   - This should be a trained ResNet-50 model with 2 output classes
+   - The trained model `coral_health_resnet50.pth` is included via Git LFS
+   - If running locally and Git LFS isn't set up, the model will be downloaded automatically
 
 ## Usage
+
+### Online (Recommended)
+1. **Visit**: [https://coral-health.streamlit.app/](https://coral-health.streamlit.app/)
+2. **Upload an image** or **paste an image URL** in the sidebar
+3. **View the prediction** with confidence score  
+4. **Toggle Grad-CAM** to see model attention
+
+### Local Development
 
 1. **Run the application**:
    ```bash
